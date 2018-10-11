@@ -3,6 +3,10 @@ package lab2;
 import lab2.A.Car;
 import lab2.A.Motor;
 import lab2.A.Wheel;
+import lab2.B.Box;
+import lab2.B.Candy;
+
+import java.util.ArrayList;
 
 public class Runner {
 
@@ -29,6 +33,11 @@ public class Runner {
 
     public static void partB(){
         System.out.println("B:");
-
+        ArrayList<Candy> candies = new ArrayList<Candy>();
+        candies.add(new Candy("Mars", 0.1, 1000, 200));
+        candies.add(new Candy("Lion", 0.09, 1200, 220));
+        Box box = new Box(candies);
+        box.sortCandysByWeigth();
+        System.out.println(box);
     }
 }
