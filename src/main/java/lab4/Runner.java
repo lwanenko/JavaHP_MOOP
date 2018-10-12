@@ -17,7 +17,7 @@ public class Runner {
 
     public static void partA7(){
         System.out.println("A7");
-        StringNumerator numerator = new StringNumerator("ABCDEFG");
+        StringNumerator numerator = new StringNumerator("MAMA SHILA MNE SHTANI");
         numerator.consolePrint();
     }
 
