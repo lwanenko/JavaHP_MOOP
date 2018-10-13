@@ -41,7 +41,7 @@ public class StringNumerator {
     }
 
     public void consolePrint(){
-        System.out.println();
+        
         for (int i = 0; i < inputText.length(); i++) {
             System.out.print(inputText.charAt(i) + "  ");
         }

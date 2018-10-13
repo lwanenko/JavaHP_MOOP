@@ -1,6 +1,8 @@
 package lab4;
 
 import lab4.A7.StringNumerator;
+import lab4.B7.Letter;
+import lab4.C7.MaxSubstrWithEqualsFirstLastChar;
 
 public class Runner {
 
@@ -16,7 +18,7 @@ public class Runner {
     }
 
     public static void partA7(){
-        System.out.println("A7");
+        System.out.println("A7:");
         StringNumerator numerator = new StringNumerator("MAMA SHILA MNE SHTANI");
         numerator.consolePrint();
     }
@@ -27,7 +29,7 @@ public class Runner {
     }
 
     public static void partB7(){
-        System.out.println("B7");
+        System.out.println("B7:");
 
     }
 
@@ -37,8 +39,9 @@ public class Runner {
     }
 
     public static void partC7(){
-        System.out.println("C7");
-
+        System.out.println("C7:");
+        MaxSubstrWithEqualsFirstLastChar maxSubstr = new MaxSubstrWithEqualsFirstLastChar("fewertttfffffgttttttttttttqwr");
+        System.out.println(maxSubstr.deleteMaxSubstring());
     }
 
     public static void partC8(){
