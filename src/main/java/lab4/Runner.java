@@ -1,7 +1,7 @@
 package lab4;
 
 import lab4.A7.StringNumerator;
-import lab4.B7.Letter;
+import lab4.B7.Text;
 import lab4.C7.MaxSubstrWithEqualsFirstLastChar;
 
 public class Runner {
@@ -30,6 +30,9 @@ public class Runner {
 
     public static void partB7(){
         System.out.println("B7:");
+        Text text = new Text();
+        text.parce("1234567890.12345679```134```1234455");
+        System.out.println(text);
 
     }
 
