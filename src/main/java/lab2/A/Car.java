@@ -27,6 +27,7 @@ public class Car {
             if(wheel == null)
                 throw new RuntimeException();
         fuel -= motor.work();
+        System.out.println(fuel);
         if(fuel < 0){
             fuel = 0;
             throw new RuntimeException();

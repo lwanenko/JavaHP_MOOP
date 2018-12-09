@@ -1,11 +1,16 @@
 package lab1;
 
-import lab1.A.*;
+import lab1.A.Customer;
+import lab1.A.CustomerBuilder;
+import lab1.A.CustomersSort;
 import lab1.B.Complex;
-import lab1.C.*;
+import lab1.C.Line;
+import lab1.C.RationalNumber;
 
 import java.math.BigInteger;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Set;
 
 public class Runner {
     public static void main(String[ ] args) {
@@ -59,10 +64,10 @@ public class Runner {
     public static void partB(){
         System.out.println("B:");
         ArrayList<Complex> list = new ArrayList<Complex>();
-        list.add(new Complex(123, 123));
-        list.add(new Complex(123, 123));
-        list.add(new Complex(123, 123));
-        list.add(new Complex(123, 123));
+        list.add(new Complex(1, 2));
+        list.add(new Complex(1, 2));
+        list.add(new Complex(1, 2));
+        list.add(new Complex(1, 2));
         System.out.println(Complex.addList(list));
     }
 

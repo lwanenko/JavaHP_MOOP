@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="warn" name="Lab4Log" packages="">
+
+    <Appenders>
+        <File name="TraceFile" fileName="logs/trace.log">
+            <PatternLayout>
+                <Pattern>%d %p %c [%t] %m%n</Pattern>
+            </PatternLayout>
+        </File>
+
+        <File name="InfoFile" fileName="logs/info.log">
+            <PatternLayout>
+                <Pattern>%d %p %c [%t] %m%n</Pattern>
+            </PatternLayout>
+            <LevelRangeFilter minLevel="INFO" maxLevel="INFO" onMatch="ACCEPT" onMismatch="DENY"/>
+        </File>
+
+        <File name="ErrorFile" fileName="logs/error.log">
+            <PatternLayout>
+                <Pattern>%d %p %c [%t] %m%n</Pattern>
+            </PatternLayout>
+            <LevelRangeFilter minLevel="ERROR" maxLevel="ERROR" onMatch="ACCEPT" onMismatch="DENY"/>
+        </File>
+
+    </Appenders>
+
+    <Loggers>
+        <Root level="all">
+            <AppenderRef ref="InfoFile"  level="info" />
+            <AppenderRef ref="ErrorFile" level="error" />
+            <AppenderRef ref="TraceFile" level="trace" />
+        </Root>
+    </Loggers>
+
+</Configuration>

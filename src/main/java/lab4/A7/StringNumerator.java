@@ -48,5 +48,4 @@ public class StringNumerator {
         System.out.println();
         System.out.println(parse());
     }
-
 }

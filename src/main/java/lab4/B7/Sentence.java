@@ -17,5 +17,4 @@ public class Sentence implements ITextComponent {
         return value;
     }
 
-
 }

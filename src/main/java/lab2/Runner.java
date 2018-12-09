@@ -5,6 +5,7 @@ import lab2.A.Motor;
 import lab2.A.Wheel;
 import lab2.B.Box;
 import lab2.B.Candy;
+import lab2.B.SugarCandy;
 
 import java.util.ArrayList;
 
@@ -36,6 +37,8 @@ public class Runner {
         ArrayList<Candy> candies = new ArrayList<Candy>();
         candies.add(new Candy("Mars", 0.1, 1000, 200));
         candies.add(new Candy("Lion", 0.09, 1200, 220));
+
+        candies.add(new SugarCandy("Півник ", 0.1, 1200, 220, "Півник"));
         Box box = new Box(candies);
         box.sortCandysByWeigth();
         System.out.println(box);

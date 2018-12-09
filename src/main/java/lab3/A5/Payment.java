@@ -35,8 +35,10 @@ public class Payment {
         String _return = "Payment: \n";
         Payment curPayment = this;
         double sum = 0;
+        int i = 0;
         while (curPayment != null){
-            _return += curPayment.product;
+            _return += "" + i+ curPayment.product ;
+            i++;
             curPayment = curPayment.nextPayment;
         }
         return _return + "Total:     " + getPrice() + "грн";
